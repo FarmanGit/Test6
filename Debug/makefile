@@ -2,19 +2,19 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-### Toolchain: BD-SL-i.MX6-armv7l-timesys-linux-gnueabihf-gcc-5.5.0-20180402-16:56 ###
-CC=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-gcc
-STRIP=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-strip
-CXX=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-g++
-CPP=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-cpp
-RANLIB=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-ranlib
-DEBUGGER=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-gdb
-AR=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-ar
-AS=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-as
-OBJCOPY=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-objcopy
-OBJDUMP=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-objdump
-LD=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-ld
-NM=/home/farman/timesys/BD-SL-i_MX6/toolchain/bin/armv7l-timesys-linux-gnueabihf-nm
+### Toolchain: nitrogen6x-armv7l-timesys-linux-gnueabihf-gcc-5.5.0-20180316-12:47 ###
+CC=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-gcc
+STRIP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-strip
+CXX=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-g++
+CPP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-cpp
+RANLIB=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ranlib
+DEBUGGER=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-gdb
+AR=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ar
+AS=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-as
+OBJCOPY=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-objcopy
+OBJDUMP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-objdump
+LD=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ld
+NM=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-nm
 
 -include ../makefile.init
 
@@ -50,31 +50,30 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
-ARCHIVES += \
-libTest6_cppstatic.a \
-libUSER_OBJS.a \
+EXECUTABLES += \
+USER_OBJS \
 
 
 # All Target
-all: libTest6_cppstatic.a
+all: libTest6StaticCpp.a
 
 # Tool invocations
-libTest6_cppstatic.a: $(OBJS) $(USER_OBJS)
+libTest6StaticCpp.a: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC Archiver'
-	$(AR) -r  "libTest6_cppstatic.a" $(OBJS) $(USER_OBJS) $(LIBS)
+	ar -r  "libTest6StaticCpp.a" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-libUSER_OBJS.a: $(OBJS) $(USER_OBJS)
-	@echo 'Invoking: GCC Archiver'
-	ar -r  "libUSER_OBJS.a" $(OBJS) $(USER_OBJS) $(LIBS)
+USER_OBJS: $(OBJS) $(USER_OBJS)
+	@echo 'Invoking: GCC C++ Linker'
+	$(CXX)  -o "USER_OBJS" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(ARCHIVES)$(C_DEPS)$(CPP_DEPS) libTest6_cppstatic.a
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(ARCHIVES)$(C_DEPS)$(CPP_DEPS) libTest6StaticCpp.a
 	-@echo ' '
 
 .PHONY: all clean dependents

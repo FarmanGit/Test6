@@ -15,6 +15,7 @@ S_UPPER_SRCS :=
 O_SRCS := 
 CC_DEPS := 
 C++_DEPS := 
+EXECUTABLES := 
 OBJS := 
 C_UPPER_DEPS := 
 CXX_DEPS := 
