@@ -19,7 +19,6 @@ EXECUTABLES :=
 OBJS := 
 C_UPPER_DEPS := 
 CXX_DEPS := 
-ARCHIVES := 
 C_DEPS := 
 CPP_DEPS := 
 

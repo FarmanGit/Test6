@@ -2,21 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-### Toolchain: nitrogen6x-armv7l-timesys-linux-gnueabihf-gcc-5.5.0-20180316-12:47 ###
-CC=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-gcc
-STRIP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-strip
-CXX=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-g++
-CPP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-cpp
-RANLIB=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ranlib
-DEBUGGER=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-gdb
-AR=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ar
-AS=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-as
-OBJCOPY=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-objcopy
-OBJDUMP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-objdump
-LD=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ld
-NM=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-nm
-
--include ../makefile.init
+-include makefile.init
 
 RM := rm -rf
 
@@ -50,30 +36,21 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
-EXECUTABLES += \
-USER_OBJS \
-
 
 # All Target
-all: libTest6StaticCpp.a
+all: Test6_16
 
 # Tool invocations
-libTest6StaticCpp.a: $(OBJS) $(USER_OBJS)
+Test6_16: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: GCC Archiver'
-	ar -r  "libTest6StaticCpp.a" $(OBJS) $(USER_OBJS) $(LIBS)
-	@echo 'Finished building target: $@'
-	@echo ' '
-
-USER_OBJS: $(OBJS) $(USER_OBJS)
 	@echo 'Invoking: GCC C++ Linker'
-	$(CXX)  -o "USER_OBJS" $(OBJS) $(USER_OBJS) $(LIBS)
-	@echo 'Finished building: $@'
+	$(CXX) $(TIMESTORM_LINKER_FLAGS) $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(ARCHIVES)$(C_DEPS)$(CPP_DEPS) libTest6StaticCpp.a
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) Test6_16
 	-@echo ' '
 
 .PHONY: all clean dependents

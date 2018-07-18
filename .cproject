@@ -13,30 +13,116 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.timesys.ide.sampleProjects.0" name="Debug" parent="com.timesys.ide.cdev.config.exe.sampleProjectDebug">
+				<configuration artifactExtension="" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.timesys.ide.sampleProjects.0" name="Debug" parent="com.timesys.ide.cdev.config.exe.sampleProjectDebug">
 					<folderInfo id="com.timesys.ide.sampleProjects.0." name="/" resourcePath="">
-						<toolChain id="com.timesys.ide.cdev.toolchain.exe.sampleProjectDebug.46141513" name="TimeStorm Cross-Compile Toolchain" superClass="com.timesys.ide.cdev.toolchain.exe.sampleProjectDebug">
-							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.timsys.ide.cdev.platform.181029812" name="TimeStorm Abstract Platform" osList="all" superClass="com.timsys.ide.cdev.platform"/>
-							<builder buildPath="${workspace_loc:/Test6StaticCpp}/Debug" enableAutoBuild="false" id="com.timesys.ide.cdev.managedbuilder.645339133" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="TimeSys Managed Builder" superClass="com.timesys.ide.cdev.managedbuilder">
+						<toolChain id="com.timesys.ide.cdev.toolchain.exe.sampleProjectDebug.729075943" name="TimeStorm Cross-Compile Toolchain" superClass="com.timesys.ide.cdev.toolchain.exe.sampleProjectDebug">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.timsys.ide.cdev.platform.135324420" name="TimeStorm Abstract Platform" osList="all" superClass="com.timsys.ide.cdev.platform"/>
+							<builder buildPath="${workspace_loc:/Test6_16}/Debug" enableAutoBuild="false" id="com.timesys.ide.cdev.managedbuilder.875138222" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="TimeSys Managed Builder" superClass="com.timesys.ide.cdev.managedbuilder">
 								<outputEntries>
 									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="GnuProfiler"/>
 								</outputEntries>
 							</builder>
-							<tool id="com.timesys.ide.cdev.tool.c.compiler.debug.1355297064" name="GCC C Compiler" superClass="com.timesys.ide.cdev.tool.c.compiler.debug">
-								<inputType id="com.timesys.ide.cdev.tool.c.compiler.input.1103980064" superClass="com.timesys.ide.cdev.tool.c.compiler.input"/>
+							<tool id="com.timesys.ide.cdev.tool.c.compiler.debug.1342568593" name="GCC C Compiler" superClass="com.timesys.ide.cdev.tool.c.compiler.debug">
+								<inputType id="com.timesys.ide.cdev.tool.c.compiler.input.701543334" superClass="com.timesys.ide.cdev.tool.c.compiler.input"/>
 							</tool>
-							<tool id="com.timesys.ide.cdev.tool.cpp.compiler.debug.1194720986" name="GCC C++ Compiler" superClass="com.timesys.ide.cdev.tool.cpp.compiler.debug">
-								<option id="gnu.cpp.compiler.option.dialect.flags.384788231" name="Other dialect flags" superClass="gnu.cpp.compiler.option.dialect.flags" value="-std=c++11" valueType="string"/>
-								<inputType id="com.timesys.ide.cdev.tool.cpp.compiler.input.135171397" superClass="com.timesys.ide.cdev.tool.cpp.compiler.input"/>
+							<tool id="com.timesys.ide.cdev.tool.cpp.compiler.debug.404147452" name="GCC C++ Compiler" superClass="com.timesys.ide.cdev.tool.cpp.compiler.debug">
+								<option id="gnu.cpp.compiler.option.dialect.flags.1490346600" name="Other dialect flags" superClass="gnu.cpp.compiler.option.dialect.flags" value="-std=c++11" valueType="string"/>
+								<inputType id="com.timesys.ide.cdev.tool.cpp.compiler.input.1737347951" superClass="com.timesys.ide.cdev.tool.cpp.compiler.input"/>
 							</tool>
-							<tool id="com.timesys.ide.cdev.tool.assembler.520116197" name="GCC Assembler" superClass="com.timesys.ide.cdev.tool.assembler">
-								<option id="com.timesys.ide.cdev.option.toolchain.1551818648" name="Toolchain (hidden)" superClass="com.timesys.ide.cdev.option.toolchain" value="nitrogen6x-armv7l-timesys-linux-gnueabihf-gcc-5.5.0-20180316-12:47" valueType="string"/>
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1709473121" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							<tool id="com.timesys.ide.cdev.tool.assembler.1789401874" name="GCC Assembler" superClass="com.timesys.ide.cdev.tool.assembler">
+								<option id="com.timesys.ide.cdev.option.toolchain.1376519591" name="Toolchain (hidden)" superClass="com.timesys.ide.cdev.option.toolchain" value="yocto--arm-poky-linux-gnueabi--opt-poky-n6x-203" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.267951050" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
-							<tool id="com.timesys.ide.managedbuild.tool.gnu.archiver.base.1913236026" name="GCC Archiver" superClass="com.timesys.ide.managedbuild.tool.gnu.archiver.base"/>
-							<tool id="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectDebug.1190958505" name="GCC C Linker" superClass="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectDebug"/>
-							<tool id="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectDebug.2134299541" name="GCC C++ Linker" superClass="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectDebug">
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.502601201" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+							<tool id="com.timesys.ide.managedbuild.tool.gnu.archiver.base.1299706" name="GCC Archiver" superClass="com.timesys.ide.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectDebug.1077039152" name="GCC C Linker" superClass="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectDebug"/>
+							<tool id="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectDebug.1758323382" name="GCC C++ Linker" superClass="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectDebug">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.2043139982" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.timesys.ide.sampleProjects.1">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.timesys.ide.sampleProjects.1" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.timesys.timestorm.ide.sampleProject" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.timesys.timestorm.ide.sampleProject" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.timesys.ide.sampleProjects.1" name="Release" parent="com.timesys.ide.cdev.config.exe.sampleProjectsRelease">
+					<folderInfo id="com.timesys.ide.sampleProjects.1." name="/" resourcePath="">
+						<toolChain id="com.timesys.ide.cdev.toolchain.exe.sampleProjectRelease.219722586" name="TimeStorm Cross-Compile Toolchain" superClass="com.timesys.ide.cdev.toolchain.exe.sampleProjectRelease">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.timsys.ide.cdev.platform.755782731" name="TimeStorm Abstract Platform" osList="all" superClass="com.timsys.ide.cdev.platform"/>
+							<builder buildPath="${workspace_loc:/Test6_16}/Release" id="com.timesys.ide.cdev.managedbuilder.1153225242" name="TimeSys Managed Builder.Release" superClass="com.timesys.ide.cdev.managedbuilder"/>
+							<tool id="com.timesys.ide.cdev.tool.c.compiler.release.1472426209" name="GCC C Compiler" superClass="com.timesys.ide.cdev.tool.c.compiler.release">
+								<inputType id="com.timesys.ide.cdev.tool.c.compiler.input.2120241088" superClass="com.timesys.ide.cdev.tool.c.compiler.input"/>
+							</tool>
+							<tool id="com.timesys.ide.cdev.tool.cpp.compiler.release.1781620686" name="GCC C++ Compiler" superClass="com.timesys.ide.cdev.tool.cpp.compiler.release">
+								<option id="gnu.cpp.compiler.option.dialect.flags.2109537482" superClass="gnu.cpp.compiler.option.dialect.flags" value="-std=c++11" valueType="string"/>
+								<inputType id="com.timesys.ide.cdev.tool.cpp.compiler.input.1591319591" superClass="com.timesys.ide.cdev.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.timesys.ide.cdev.tool.assembler.1939195458" name="GCC Assembler" superClass="com.timesys.ide.cdev.tool.assembler">
+								<option id="com.timesys.ide.cdev.option.toolchain.1287673320" superClass="com.timesys.ide.cdev.option.toolchain" value="yocto--arm-poky-linux-gnueabi--opt-poky-n6x-203" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1831044374" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="com.timesys.ide.managedbuild.tool.gnu.archiver.base.1131260667" name="GCC Archiver" superClass="com.timesys.ide.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectsRelease.1507252609" name="GCC C Linker" superClass="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectsRelease"/>
+							<tool id="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectsRelease.1129968433" name="GCC C++ Linker" superClass="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectsRelease">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.261558135" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.timesys.ide.sampleProjects.2">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.timesys.ide.sampleProjects.2" moduleId="org.eclipse.cdt.core.settings" name="GnuProfiler">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.timesys.timestorm.ide.sampleProject" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.timesys.timestorm.ide.sampleProject" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.timesys.ide.sampleProjects.2" name="GnuProfiler" parent="com.timesys.ide.cdev.config.exe.sampleProjectsProfile">
+					<folderInfo id="com.timesys.ide.sampleProjects.2." name="/" resourcePath="">
+						<toolChain id="com.timesys.ide.cdev.toolchain.exe.sampleProjectProfile.1122594708" name="TimeStorm Cross-Compile Toolchain" superClass="com.timesys.ide.cdev.toolchain.exe.sampleProjectProfile">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.timsys.ide.cdev.platform.719629167" name="TimeStorm Abstract Platform" osList="all" superClass="com.timsys.ide.cdev.platform"/>
+							<builder buildPath="${workspace_loc:/Test6_16}/GnuProfiler" id="com.timesys.ide.cdev.managedbuilder.894586362" name="TimeSys Managed Builder.GnuProfiler" superClass="com.timesys.ide.cdev.managedbuilder"/>
+							<tool id="com.timesys.ide.cdev.tool.c.compiler.profile.1790854339" name="GCC C Compiler" superClass="com.timesys.ide.cdev.tool.c.compiler.profile">
+								<inputType id="com.timesys.ide.cdev.tool.c.compiler.input.296490221" superClass="com.timesys.ide.cdev.tool.c.compiler.input"/>
+							</tool>
+							<tool id="com.timesys.ide.cdev.tool.cpp.compiler.profile.1941850577" name="GCC C++ Compiler" superClass="com.timesys.ide.cdev.tool.cpp.compiler.profile">
+								<option id="gnu.cpp.compiler.option.dialect.flags.1329068072" superClass="gnu.cpp.compiler.option.dialect.flags" value="-std=c++11" valueType="string"/>
+								<inputType id="com.timesys.ide.cdev.tool.cpp.compiler.input.1446269627" superClass="com.timesys.ide.cdev.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.timesys.ide.cdev.tool.assembler.1459584720" name="GCC Assembler" superClass="com.timesys.ide.cdev.tool.assembler">
+								<option id="com.timesys.ide.cdev.option.toolchain.262210860" superClass="com.timesys.ide.cdev.option.toolchain" value="yocto--arm-poky-linux-gnueabi--opt-poky-n6x-203" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1131253185" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="com.timesys.ide.managedbuild.tool.gnu.archiver.base.738681845" name="GCC Archiver" superClass="com.timesys.ide.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectsProfile.56282144" name="GCC C Linker" superClass="com.timesys.ide.cdev.tool.c.linker.exe.sampleProjectsProfile"/>
+							<tool id="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectsProfile.1921939430" name="GCC C++ Linker" superClass="com.timesys.ide.cdev.tool.cpp.linker.exe.sampleProjectsProfile">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1296947556" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
@@ -49,22 +135,28 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="Test6StaticCpp.com.timesys.ide.sampleProjects.1464205548" name="Samples" projectType="com.timesys.ide.sampleProjects"/>
+		<project id="Test6_16.com.timesys.ide.sampleProjects.1949007572" name="Samples" projectType="com.timesys.ide.sampleProjects"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.timesys.ide.cdev.config.lib.debug.1777607496;com.timesys.ide.cdev.config.lib.debug.1777607496.;com.timesys.ide.cdev.tool.cpp.compiler.debug.731575716;com.timesys.ide.cdev.tool.cpp.compiler.input.245733424">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.timesys.ide.sampleProjects.0;com.timesys.ide.sampleProjects.0.;com.timesys.ide.cdev.tool.cpp.compiler.debug.1194720986;com.timesys.ide.cdev.tool.cpp.compiler.input.135171397">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
-		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.timesys.ide.sampleProjects.0;com.timesys.ide.sampleProjects.0.;com.timesys.ide.cdev.tool.c.compiler.debug.1355297064;com.timesys.ide.cdev.tool.c.compiler.input.1103980064">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.timesys.ide.cdev.config.lib.debug.1777607496;com.timesys.ide.cdev.config.lib.debug.1777607496.;com.timesys.ide.cdev.tool.c.compiler.debug.1586360683;com.timesys.ide.cdev.tool.c.compiler.input.864033976">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.timesys.ide.cdev.config.lib.debug.1777607496;com.timesys.ide.cdev.config.lib.debug.1777607496.;com.timesys.ide.cdev.tool.cpp.compiler.debug.731575716;com.timesys.ide.cdev.tool.cpp.compiler.input.245733424">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.timesys.ide.sampleProjects.0;com.timesys.ide.sampleProjects.0.;com.timesys.ide.cdev.tool.cpp.compiler.debug.1194720986;com.timesys.ide.cdev.tool.cpp.compiler.input.135171397">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.timesys.ide.sampleProjects.0;com.timesys.ide.sampleProjects.0.;com.timesys.ide.cdev.tool.cpp.compiler.debug.404147452;com.timesys.ide.cdev.tool.cpp.compiler.input.1737347951">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.timesys.ide.sampleProjects.0;com.timesys.ide.sampleProjects.0.;com.timesys.ide.cdev.tool.c.compiler.debug.1342568593;com.timesys.ide.cdev.tool.c.compiler.input.701543334">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.timesys.ide.cdev.TSManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

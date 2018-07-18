@@ -9,7 +9,7 @@ int sayHello() {
 
 
 int main() {
-	std::cout << "Hello World main!" << std::endl;
+	std::cout << "Hello World main inside cpp static!" << std::endl;
 
 	return 0;
 }
