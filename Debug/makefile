@@ -25,32 +25,41 @@ endif
 ifneq ($(strip $(CXX_DEPS)),)
 -include $(CXX_DEPS)
 endif
-ifneq ($(strip $(C_DEPS)),)
--include $(C_DEPS)
-endif
 ifneq ($(strip $(CPP_DEPS)),)
 -include $(CPP_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
 endif
 endif
 
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
+EXECUTABLES += \
+USER_OBJS \
+
 
 # All Target
-all: Test6_16
+all: libTest6CppStatic.a
 
 # Tool invocations
-Test6_16: $(OBJS) $(USER_OBJS)
+libTest6CppStatic.a: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
+	@echo 'Invoking: GCC Archiver'
+	ar -r  "libTest6CppStatic.a" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+USER_OBJS: $(OBJS) $(USER_OBJS)
 	@echo 'Invoking: GCC C++ Linker'
 	$(CXX) $(TIMESTORM_LINKER_FLAGS) $(OBJS) $(USER_OBJS) $(LIBS)
-	@echo 'Finished building target: $@'
+	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) Test6_16
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(ARCHIVES)$(CPP_DEPS)$(C_DEPS) libTest6CppStatic.a
 	-@echo ' '
 
 .PHONY: all clean dependents
